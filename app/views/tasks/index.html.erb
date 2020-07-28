@@ -6,12 +6,16 @@
     <li>[x]
       <!-- Goes to show -->
       <%= link_to task.name, task_path(task) %>
+      <%= link_to "x", task_path(task), method: :delete %>
     </li>
   <% else %>
     <li>[  ]
         <!-- Goes to show -->
         <%= link_to task.name, task_path(task) %>
+        <%= link_to "x", task_path(task), method: :delete %>
     </li>
   <% end %>
 <% end %>
 </ul>
+
+<%= link_to "Add new task", "/tasks/new" %>

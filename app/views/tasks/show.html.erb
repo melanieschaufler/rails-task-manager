@@ -1,5 +1,7 @@
 <h1><%= @task.name %></h1>
 
+<%= link_to "Update the task", "/tasks/#{@task.id}/edit" %>
+
 <p>Details: <%= @task.details %></p>
 
 <% if @task.completed == true %>
